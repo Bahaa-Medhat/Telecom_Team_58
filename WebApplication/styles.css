@@ -1,0 +1,199 @@
+﻿body {
+    font-family: Arial, sans-serif;
+    background-color: #fff;
+    background-image: url("background.jpg");
+    background-size:cover;
+    margin: 0;
+    padding: 0;
+}
+
+.navigation {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px;
+}
+
+.btnBack, .btnHome {
+    background-color: red;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+    .btnBack:hover, .btnHome:hover {
+        background-color: #b52d37;
+    }
+
+h1, h2 {
+    text-align: center;
+    color: #fff;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.2);
+}
+
+label, #lblTransactions, #lblPoints, #lblCashback, #lblAverageAmount, #lblResult, #lblMessage, #lblRemainingPayment, #lblExtraPayment, #lblCashbackAmount {
+    font-size: 16px;
+    color: #fff;
+    font-weight: bold;
+    display: block;
+    margin-bottom: 8px;
+}
+
+.input-box, .search-box, .date-box {
+    width: 100%;
+    padding: 8px;
+    border: 1px solid #e63946;
+    border-radius: 3px;
+    margin-bottom: 15px;
+    font-size: 14px;
+}
+
+    .input-box:focus, .search-box:focus, .date-box:focus {
+        border-color: #b52d37;
+        outline: none;
+    }
+
+.login-panel, .content-panel {
+    margin: 100px auto;
+    width: 300px;
+    max-width: 800px;
+    padding: 20px;
+    border: 1px solid #e63946;
+    border-radius: 5px;
+    background: #fff;
+    box-shadow: 0 0 10px rgba(230, 57, 70, 0.2);
+}
+
+.center-container {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.dashboard-container, .container {
+    margin: 50px auto;
+    max-width: 900px;
+    font-family: Arial, sans-serif;
+    text-align: center;
+}
+
+p {
+    font-size: 16px;
+    color: #fce4e6;
+    text-align: center;
+}
+
+.content-label, td {
+    font-size: 16px;
+    color: #555;
+    padding: 10px;
+}
+
+.input-box {
+    width: 100%;
+    padding: 8px;
+    border: 1px solid #e63946;
+    border-radius: 3px;
+}
+
+button, .grid-item, .btnSearch, .btnSubmit, #btnSearch, #btnCalculate, #btnCheck, #btnUpdate, #btnRemoveBenefits, #btnViewConsumption, #btnViewTickets, #btnViewVoucher, #btnViewPayment {
+    display: inline-block;
+    padding: 10px 20px;
+    border: 1px solid #e63946;
+    border-radius: 3px;
+    text-align: center;
+    font-size: 14px;
+    cursor: pointer;
+    background-color: #fff;
+    color: red;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+    button:hover, .grid-item:hover, .btnSearch:hover, .btnSubmit:hover, #btnSearch:hover, #btnCalculate:hover, #btnCheck:hover, #btnUpdate:hover, #btnRemoveBenefits:hover, #btnViewConsumption:hover, #btnViewTickets:hover, #btnViewVoucher:hover, #btnViewPayment:hover {
+        background-color: red;
+        color: #fff;
+    }
+
+.btn-login {
+    background-color: #e63946;
+    color: #fff;
+}
+
+    .btn-login:hover {
+        background-color: #b52d37;
+    }
+
+.logout-button {
+    background-color: #e63946;
+    color: #fff;
+}
+
+    .logout-button:hover {
+        background-color: #b52d37;
+    }
+
+.nav-links {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: space-around;
+}
+
+    .nav-links li {
+        margin: 5px;
+    }
+
+    .nav-links a, .nav-links asp\:LinkButton {
+        text-decoration: none;
+        color: #e63946;
+        font-weight: bold;
+        cursor: pointer;
+        transition: color 0.3s ease;
+    }
+
+        .nav-links a:hover, .nav-links asp\:LinkButton:hover {
+            color: #b52d37;
+        }
+
+.gridview {
+    width: 100%;
+    margin-top: 20px;
+    border-collapse: collapse;
+}
+
+    .gridview th {
+        background-color: #e63946;
+        color: white;
+        padding: 10px;
+        text-align: left;
+        border: 1px solid #ddd;
+    }
+
+    .gridview td {
+        border: 1px solid #ddd;
+    }
+
+    .gridview tr:nth-child(even) {
+        background-color: #f2f2f2;
+    }
+
+    .gridview tr:nth-child(odd) {
+        background-color: white;
+    }
+
+    .gridview tr:hover {
+        background-color: #fce4e6;
+    }
+
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    gap: 15px;
+    margin-top: 20px;
+}
